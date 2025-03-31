@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel = "stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+   <!--Menú-->
+    <section class="menu-general">
+        <div class="menu-elements"><a href="#nosaltres">Nosaltres</a></div>
+        <div class="menu-elements"><a href="#carta">Carta</a></div>
+        <div class="menu-elements"><a href="#galeria">Galeria</a></div>
+    </section>
+    <!--Botó reservar-->
+    <section>
+        <a class="button" href="#formulari">Reservar</a>
+    </section>
+
+    <!--Capçalera-->
+    <section class="header-container">
+      <div class="header-text">
+        <h1>
+          Els Coberts
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Pariatur cupiditate ducimus corrupti omnis quibusdam exercitationem 
+          perspiciatis harum? Nam, quam delectus!
+        </p>
+      </div>
+    </section>
+
+    <!--Nosaltres-->
+    <h2> Nosaltres </h2>
+    <div class="nosaltres-container" id="nosaltres">
+      <div class="n1">
+        <img src="../images/ManuelDeFalla.jpg" alt="ManuelDeFalla">
+      </div>
+      <div class="n2">
+         <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Enim minima amet rem in esse aut facilis possimus inventore sunt ducimus.
+        </p>
+      </div>
+      <div class="n3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Enim minima amet rem in esse aut facilis possimus inventore sunt ducimus.
+        </p>
+      </div>
+      <div class="n4">
+        <img src="../images/Erwin_Schrödinger_(1933).jpg" >
+      </div>
+    </div>
+
+    <!--Carta-->
+    <h2>La nostra carta </h2>
+    <section id ="carta">
+      <h2>Carta</h2>
+      <div class="carta-container">
+        <div class="m1"><span>Menú</span></div>
+        <div class="m2"><span>Menú 1</span></div>
+        <div class="m3">
+          <h2>Contingut</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam aliquid sint aspernatur fuga. Quisquam veritatis dolorem, adipisci, blanditiis, reiciendis iste dolorum ducimus impedit labore expedita molestias eligendi error dignissimos?</p>
+        </div>
+        <div class="m4">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg">
+          <div class="overlay-1">Arròs amb pollastre</div>
+        </div>
+        <div class="m5">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg">
+          <div class="overlay-1">Arròs amb pollastre</div>
+        </div>
+        <div class="m6"><span>Menú 2</span></div>
+        <div class="m7">
+          <h2>Contingut</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam aliquid sint aspernatur fuga. Quisquam veritatis dolorem, adipisci, blanditiis, reiciendis iste dolorum ducimus impedit labore expedita molestias eligendi error dignissimos?</p>
+        </div>
+        <div class="m8">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg">
+          <div class="overlay-1">Arròs amb pollastre</div>
+        </div>
+        <div class="m9">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg">
+          <div class="overlay-1">Arròs amb pollastre</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Galeria d'imatges-->
+    <h2> Galeria dels nostres plats </h2>
+    <section class="overgal" id="galeria">
+        <div class="gallery-container">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre" >
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre">
+          <img src="../images/arroz-con-pollo-paso-8.jpeg" alt="arròs amb pollastre">
+        </div>
+    </section>
+    <!--Formulari-->
+    <form class="formulari-container" id="formulari">
+      <div class="form-header">
+          <h2>Reserva</h2>
+      </div>
+      <label for="nom" class="nombre-persones">Nombre de persones:</label>
+      <input type="number" id="personas" name="personas" class ="input-nombre" placeholder="Número de persones" required>
+      <label for="nom" class="label-nom">Nom:</label>
+      <input type="text" id="nom" name="nom" class="input-nom" required>
+      <label for="data" class="label-data">Data:</label>
+      <input type="date" id="data" name="data" class="input-data" required>
+      <label for="hora" class="label-hora">Hora:</label>
+      <input type="time" id="hora" name="hora" class="input-hora" required>
+      <label for="descripcio" class="label-descripcio">Descripció:</label>
+      <textarea id="descripcio" name="descripcio" rows="4" class="input-descripcio" required></textarea>
+      <button type="submit" class="button-reservar">Reservar</button>
+  </form>
+    <!--Footer-->
+    <footer class="footer-container">
+      <div class="ico-container">
+        <div class="mail">
+          <span class="material-symbols-outlined">
+            contact_mail
+            </span>
+          <p>example@gmail.com</p>
+        </div>
+        <div class="cell">
+          <span class="material-symbols-outlined">
+            call  
+            </span>
+          <p>9999999</p>
+        </div>
+      </div>
+      <div>
+        <img src="../images/Colbert20050109.png">
+      </div>
+    </footer>
+</body>
+</html>
